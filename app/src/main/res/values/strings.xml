@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">RegistrationValidator</string>
+
+    <string name="alphanumeric_regex">^.*[^a–zA–Z0–9 ].*$</string>
+    <string name="alpha_regex">^[a-zA-Z]*$</string>
+    <string name="containsNumerical_regex">.*\\d.*</string>
+    <string name="nonAlphanumerical_regex">[^a–zA–Z0–9]</string>
+
+    <string name="enter_username">Enter username</string>
+    <string name="enter_first_name">Enter first name</string>
+    <string name="enter_last_name">Enter last name</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="register">Register</string>
+
+    <string name="username_length_err">Username must be between 3 and 30 symbols.\n</string>
+    <string name="username_alphanum_err">Username must contain only alphanumeric symbols.\n</string>
+    <string name="name_length_err">Name must be between 3 and 30 symbols.\n</string>
+    <string name="name_letters_err">Name must contain latin letters only.\n</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="password_length_err">Password must be between 6 and 30 symbols.\n</string>
+    <string name="password_capitalLetter_err">Password must contain at least 1 capital letter.\n</string>
+    <string name="password_number_err">Password must contain one number.\n</string>
+    <string name="password_nonAlphanumeric_err">Password must contain one non-alphanumeric symbol.\n</string>
+    <string name="confirm_password_error">Passwords not matching.\n</string>
+    <string name="empty_msg" />
+
+
 </resources>
