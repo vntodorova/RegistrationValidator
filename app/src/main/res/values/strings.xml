@@ -1,30 +1,25 @@
 <resources>
     <string name="app_name">RegistrationValidator</string>
 
-    <string name="alphanumeric_regex">^.*[^a–zA–Z0–9 ].*$</string>
-    <string name="alpha_regex">^[a-zA-Z]*$</string>
-    <string name="containsNumerical_regex">.*\\d.*</string>
-    <string name="nonAlphanumerical_regex">[^a–zA–Z0–9]</string>
-
-    <string name="enter_username">Enter username</string>
-    <string name="enter_first_name">Enter first name</string>
-    <string name="enter_last_name">Enter last name</string>
-    <string name="enter_email">Enter email</string>
-    <string name="enter_password">Enter password</string>
-    <string name="confirm_password">Confirm password</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="password_confirm">Confirm password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
     <string name="register">Register</string>
 
-    <string name="username_length_err">Username must be between 3 and 30 symbols.\n</string>
-    <string name="username_alphanum_err">Username must contain only alphanumeric symbols.\n</string>
-    <string name="name_length_err">Name must be between 3 and 30 symbols.\n</string>
-    <string name="name_letters_err">Name must contain latin letters only.\n</string>
+    <string name="max_field_length">Maximum %1$s length is %2$d</string>
+    <string name="min_field_length">Minimum %1$s length is %2$d</string>
+    <string name="contains_special_symbol">Must not contain special symbols</string>
+    <string name="missing_special_symbol">Must contain special symbol</string>
     <string name="invalid_email">Invalid email</string>
-    <string name="password_length_err">Password must be between 6 and 30 symbols.\n</string>
-    <string name="password_capitalLetter_err">Password must contain at least 1 capital letter.\n</string>
-    <string name="password_number_err">Password must contain one number.\n</string>
-    <string name="password_nonAlphanumeric_err">Password must contain one non-alphanumeric symbol.\n</string>
-    <string name="confirm_password_error">Passwords not matching.\n</string>
-    <string name="empty_msg" />
+    <string name="missing_capital_letter">Must contain capital letter</string>
+    <string name="missing_number">Must contain number</string>
+    <string name="not_matching_passwords">Passwords do not match</string>
+    <string name="empty_field">Empty field</string>
 
+    <string name="contains_special_symbol_regex" translatable="false">^.*[^a-zA-Z0-9].*$</string>
+    <string name="contains_number_regex">.*\\d.*</string>
 
 </resources>
