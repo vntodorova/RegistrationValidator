@@ -26,12 +26,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
+        registrationValidator = new RegistrationValidator(this);
+
         usernameEdit = (EditText) findViewById(R.id.username);
         firstNameEdit = (EditText) findViewById(R.id.firstName);
         lastNameEdit = (EditText) findViewById(R.id.lastName);
         emailEdit = (EditText) findViewById(R.id.email);
         passwordEdit = (EditText) findViewById(R.id.password);
-        registrationValidator = new RegistrationValidator(this);
         registerButton = (Button) findViewById(R.id.registrationButton);
     }
 
