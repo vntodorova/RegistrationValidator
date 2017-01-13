@@ -21,6 +21,13 @@
 
     <string name="contains_special_symbol_regex" translatable="false">^.*[^a-zA-Z0-9].*$</string>
     <string name="contains_number_regex">.*\\d.*</string>
-    <string name="email_regex">[a-zA-Z0-9_.]+@[a-zA-Z0-9_.]+\.[a-zA-Z0-9_]+</string>
+    <string name="email_regex" translatable="false">[a-zA-Z0-9_.]+@[a-zA-Z0-9_.]+\.[a-zA-Z0-9_]+</string>
+
+    <string name="find">Find</string>
+    <string name="enter_user_info">Enter user info:</string>
+    <string name="search">Search</string>
+    <string name="new_registration">New user:</string>
+    <string name="user_info">User info:</string>
+    <string name="EXTRA">User</string>
 
 </resources>

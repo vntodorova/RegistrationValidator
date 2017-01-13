@@ -196,10 +196,11 @@ class RegistrationValidator {
         }
     });
 
-    private TextWatcher passwordConfirmWatcher =  registerTextWatcher(new OnTextChanged() {
+    private TextWatcher passwordConfirmWatcher = registerTextWatcher(new OnTextChanged() {
         @Override
         public void onTextChanged(String newText) {
             StringBuffer errorMsg = new StringBuffer();
+            isPasswordConfirmValid = true;
             if (!newText.equals(password)) {
                 errorMsg.append(activity.getString(R.string.not_matching_passwords)).append("\n");
                 isPasswordConfirmValid = false;
@@ -226,6 +227,15 @@ class RegistrationValidator {
             }
         };
         return watcher;
+    }
+
+    void clearTextFields() {
+        usernameWrapper.getEditText().setText("");
+        firstNameWrapper.getEditText().setText("");
+        lastNameWrapper.getEditText().setText("");
+        emailWrapper.getEditText().setText("");
+        passwordWrapper.getEditText().setText("");
+        passwordConfirmWrapper.getEditText().setText("");
     }
 
     private interface OnTextChanged {

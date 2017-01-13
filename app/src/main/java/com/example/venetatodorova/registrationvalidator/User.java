@@ -1,11 +1,16 @@
 package com.example.venetatodorova.registrationvalidator;
 
-class Registration {
+import java.io.Serializable;
+
+class User implements Serializable {
     private String username;
     private String firstName;
     private String lastName;
     private String email;
     private String password;
+
+    User() {
+    }
 
     public String getUsername() {
         return username;
@@ -15,7 +20,7 @@ class Registration {
         this.username = username;
     }
 
-    public String getFirstName() {
+    String getFirstName() {
         return firstName;
     }
 
@@ -23,7 +28,7 @@ class Registration {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
+    String getLastName() {
         return lastName;
     }
 
@@ -39,7 +44,7 @@ class Registration {
         this.email = email;
     }
 
-    public String getPassword() {
+    String getPassword() {
         return password;
     }
 

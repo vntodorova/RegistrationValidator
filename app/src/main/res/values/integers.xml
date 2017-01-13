@@ -6,4 +6,6 @@
     <integer name="MAX_NAME_LENGTH">30</integer>
     <integer name="MIN_PASSWORD_LENGTH">6</integer>
     <integer name="MAX_PASSWORD_LENGTH">30</integer>
+
+    <integer name="TABLE_COLUMNS_COUNT">3</integer>
 </resources>
